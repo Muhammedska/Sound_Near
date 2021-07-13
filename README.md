@@ -1,4 +1,7 @@
-# SounDNeaR
-<h1>SDNR as SounDNeaR</h1>
+# Sound Near
 <hr>
-is an mp3 player
+<h1 align='center' style='color:red;'>Sound Near</h1>
+<hr>
+<ul>
+  <li>Sound Near ücretsiz açık kaynak kodlu müzik oynatıcı</li>
+</ul>
