@@ -1,0 +1,17 @@
+{
+  "name": "soundnear",
+  "version": "1.0.0",
+  "description": "Sound Player",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "CozeltiSoftware",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^13.1.4"
+  },
+  "dependencies": {
+    "ytdl-core": "^4.8.3"
+  }
+}
