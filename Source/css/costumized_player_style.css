@@ -1,0 +1,118 @@
+/* ----------------  Player Styling ---------------- */
+#main-player-body {
+  user-select: none;
+  position: relative;
+}
+
+#playlist{
+  min-height: 560px;
+}
+#playside{
+  min-height: 560px;
+}
+#trackListView{
+  background-color: #60495a;
+  border-radius: 15px;
+}
+
+#addView{
+  border-radius: 15px;
+  height: 370px;
+  background-color: #a9aca9;
+  max-height: 370px;
+  overflow-y: scroll;
+}
+
+
+/* width */
+#addView::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+
+/* Track */
+#addView::-webkit-scrollbar-track {
+  background: #a9aca9; 
+  border-right: 15px;
+}
+ 
+/* Handle */
+#addView::-webkit-scrollbar-thumb {
+  background: #3f3244; 
+}
+
+/* Handle on hover */
+#addView::-webkit-scrollbar-thumb:hover {
+  background: #2f2235; 
+}
+
+#all_track{
+  border-radius: 15px;
+  height: 300px;
+  background-color: #a9aca9;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+#all_track::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+
+/* Track */
+#all_track::-webkit-scrollbar-track {
+  background: #a9aca9; 
+  border-right: 15px;
+}
+ 
+/* Handle */
+#all_track::-webkit-scrollbar-thumb {
+  background: #3f3244; 
+}
+
+/* Handle on hover */
+#all_track::-webkit-scrollbar-thumb:hover {
+  background: #2f2235; 
+}
+
+.playlist-dark {
+  background-color: #60495a;
+}
+
+.player-dark {
+  background-color: #60495a;
+}
+
+.box-border {
+  border: 5px solid #3f3244;
+  border-radius: 15px;
+}
+
+.song-avatar {
+  height: 200px;
+  max-height: 200px;
+  min-height: 200px;
+  border: 0px solid #BFC3BA;
+
+  transition: all 500ms;
+}
+.song-avatar:hover {
+  border: 25px solid #BFC3BA;
+
+  transition: all 500ms;
+}
+
+.sound-icon{
+    color: #a9aca9;
+    font-size: 3rem;
+    transition:all 100ms;
+}
+.sound-icon:hover{
+    color: whitesmoke;
+    transition:all 100ms;
+}
+
+.timeline-range{
+    padding-left: 5px;
+    padding-right: 5px;
+}

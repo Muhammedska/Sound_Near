@@ -1,0 +1,160 @@
+.water-green {
+  background-color: #bfc3ba;
+}
+
+.header-black {
+  color:black;
+  background-color: #bfc3ba;
+}
+
+.width-filler {
+  width: 100%;
+}
+
+.width-fill-fifty {
+  width: 50%;
+}
+
+.width-25 {
+  width: 25%;
+}
+.width-50 {
+  width: 50%;
+}
+.width-75 {
+  width: 75%;
+}
+
+.height-filler {
+  height: 100%;
+}
+.height-98 {
+  height: 98%;
+}
+
+button {
+  -webkit-app-region: no-drag;
+}
+
+/* ---------------- Window elements and Hover effects  ---------------- */
+#titlebar {
+  position: fixed;
+  -webkit-app-region: drag;
+  z-index: 1;
+  height: 40px;
+  max-height: 40px;
+  min-height: 40px;
+}
+.fix-40 {
+  height: 40px;
+}
+.btn-window-close {
+  color: white;
+  transition: all 100ms;
+  -webkit-user-drag: none;
+}
+.btn-window-close:hover {
+  background-color: red;
+  transition: all 100ms;
+}
+
+.btn-window-other {
+  color: white;
+  transition: all 100ms;
+}
+.btn-window-other:hover {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.603);
+  transition: all 100ms;
+}
+
+.app-icon {
+  max-height: 40px;
+  max-height: 100%;
+  height: 100%;
+  align-items: center;
+  margin: center;
+}
+
+.app-icon-padding {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+
+#window-title {
+  padding-left: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  
+}
+
+
+#window-item {
+  left: 70%;
+}
+/* ----------------  other elements ---------------- */
+
+/* ---------------- Window Styling  ---------------- */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#main_body {
+  position: absolute;
+  background-color: #3f3244;
+  top: 40px;
+  height: 100%;
+  max-height: 100%;
+  min-height: 100%;
+  overflow-y: auto;
+  z-index: 0;
+}
+#main_body::-webkit-scrollbar {
+  display: block;
+}
+
+/* ----------------  other elements ---------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the list (remove margins and bullets, etc) */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style the list items */
+ul li {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+  position: relative;
+}
+
+/* Add a light grey background color on hover */
+ul li:hover {
+  background-color: #eee;
+}
+
+/* Style the close button (span) */
+.kapat {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  padding: 12px 16px;
+  transform: translate(0%, -50%);
+}
+
+.kapat:hover {background: #bbb;}
+
+/* ----------------  other elements ---------------- */
