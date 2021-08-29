@@ -5,4 +5,9 @@
 <hr>
 <ul>
   <li>Sound Near ücretsiz açık kaynak kodlu müzik oynatıcı</li>
+  <li>Şarkılarınızı indirmeden dinleyin</li>
+  <li>Reklam yok</li>
+  <li>premium yok</li>
 </ul>
+<hr>
+<p>Şuanda geliştirme aşamasında olup bazı özellikler pasif durumdadır</p>
