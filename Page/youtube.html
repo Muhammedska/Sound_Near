@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <link rel="stylesheet" href="../Source/css/style.css">
+    <link rel="stylesheet" href="../Source/css/costumized_player_style.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <title>Sound Near</title>
+
+
+</head>
+
+<body>
+    <script src="../Source/js/header.js"></script>
+    <main>
+        <section class="text-white width-filler height-filler" id='main_body'>
+            <div class="container-fluid " id='main-player-body'>
+                <section class='width-filler'>
+                    <button class='btn btn-primary my-2' onclick='window.location.href="../page/index.html"'> <i class="fa fa-home" aria-hidden="true">&nbsp; Ana Sayfa</i> </button>
+                    <button class='btn btn-primary my-2' onclick='window.location.href="../page/youtube.html"'> <i class="fab fa-youtube" aria-hidden="true">&nbsp; YouTube Oynatıcı</i> </button>
+                </section>
+                <div class="row height-filler p-2">
+                    <div class="playlist-dark col-sm-4 box-border height-98" id='playlist'>
+                        <div class="container p-2">
+                            <h1>PlayLists</h1>
+                            <hr>
+                            <div class="container-fluid d-inline-flex">
+                                <input type="text" class="form-control" placeholder="mp3 url" id='add_url'>
+                                <button class="btn btn-primary" id='add_list'>Ekle</button>
+                            </div>
+                            <div class='my-4'>
+                                <div id='addView'>
+                                    <div class="container my-2">
+                                        <ul id='tracklist'>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="player-dark col-sm-8 box-border height-98" id='playside'>
+                        <div class="container p-2">
+                            <h1>Sound Near | YouTube player</h1>
+                            <hr>
+                        </div>
+                        <div class="container" id='main-player-body'>
+                            <div class="container text-center" id='song-avatar'>
+                                <img src="../Source/image/Logo.png" alt="image Avatar" class='rounded-circle song-avatar'>
+                            </div>
+                            <div class='container my-4'>
+                                <div class='container width-filler text-center text-white'>
+                                    <button class='btn bg-transparent' id="prev_track" onclick='prevTrack()'> <i class="fas fa-step-backward sound-icon"></i> </button>
+                                    <button class='btn bg-transparent' id='playpause_track' onclick='playpauseTrack()'> <i class="fas fa-play-circle  sound-icon" id='ssicon'></i> </button>
+                                    <button class='btn bg-transparent' id="next_track" onclick='nextTrack()'> <i class="fas fa-step-forward  sound-icon"></i> </button>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class='my-4 p-2' id='now_playing'>
+
+                                </div>
+                                <div class="container d-inline-flex p-2">
+                                    <div id='current_time'>00:00</div>&nbsp;
+                                    <input type="range" class='form-control-range timeline-range' min="0" max="100" value='0' id='seek_slider' onclick='seekTo()'>
+                                    &nbsp;
+                                    <div id='total_duration'>04:36</div>
+                                </div>
+                                <div class='container text-center'>
+                                    <div class='d-inline-flex'>
+                                        <button class='btn'> <i class="fas fa-volume-down"></i> </button>
+                                        <input type="range" class=' timeline-range' min="0" max="100" value='100' id='volume_slider' onclick='setVolume()' >
+                                        &nbsp;
+                                        <button class='btn'> <i class="fas fa-volume-up"></i> </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class='container-fluid my-2 p-2' id='trackListView'>
+                    <h1 class='p-2'>Track List</h1>
+                    <hr>
+                    <div class='container-fluid' id='all_track'>
+                        <ul id='tracks'>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+  
+</body>
+
+<script src="../renderer.js"></script>
+<script src="../Source/js/edit_player.js"></script>
+
+
+</html>
